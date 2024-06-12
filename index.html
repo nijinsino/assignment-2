@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="no index,nofollow">
+    <meta name="description" content="pizza website">
+    <title>PIZZA SHOP</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+   <!-- NIJIN SINO -->
+    <!-- STUDENT NUMBER:- 200594634 -->
+
+    <!-- header tag -->
+    <header>
+        <h1>PIZZA SHOP</h1>
+    </header>
+<!-- navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#news">STORE LOCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+    <div>
+    <!-- scrollable image -->
+    <!-- declaring the width and height here -->
+    <div class="scroll-container">
+        <img src="images/bbqchickenpizza.webp" alt="pizza image 1" width="600" height="400">
+        <img src="images/cheesepizza.webp" alt="pizza image 2" width="600" height="400">
+        <img src="images/hawaiinpizza.webp" alt="pizza image 3" width="600" height="400">
+        <img src="images/margherittapizaa.webp" alt="pizza image 4" width="600" height="400">
+        <img src="images/meatpizaa.webp" alt="pizza image 5" width="600" height="400">
+        <img src="images/pepperonipizza.webp" alt="pizza image 6" width="600" height="400">
+        <img src="images/veggiepizza.webp" alt="pizza image 7" width="600" height="400">
+    </div>
+</div>
+
+      <section>
+        <!-- creating form where user can select variety of pizza -->
+        <form action="somephpfile" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <h3>ORDER HERE</h3>
+                
+
+
+                  
+                <!-- I just added required so that user can't leave that space without empty -->
+                <div>
+                    <!-- options -->
+               <label for="pizzaType">Name of Pizza:</label> 
+               <select id="pizzaType" name="pizzaName" required>
+               <option value="">Select a pizza</option> 
+               <option value="pizzaname1">Veggie pizza</option>
+               <option value="pizzaname2">Cheese pizza</option>
+               <option value="pizzaname3">Hawaiin pizza</option>
+               <option value="pizzaname4">Meat pizza</option>
+               <option value="pizzaname5">Pepperoni pizza</option>
+               <option value="pizzaname6">Margheritta pizza</option>
+               <option value="pizzaname7">BBQ chicken pizza</option>
+                    </select>
+
+                </div>
+                <div>
+                    <div>
+                        <!-- Pizza size selection -->
+                        <label for="pizza-size">Select Pizza Size:</label>
+                        <select id="pizza-size" name="pizza-size">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                <div>
+                    <label for="numberOfPizzas">Number of Pizzas:</label>
+                    <input type="number" id="numberOfPizzas" name="numberOfPizzas" min="1" max="10">
+                </div>
+                <div>
+                    <!-- checkbox for toppings -->
+
+                    <label>Toppings:</label>
+                    <div>
+                        
+                        <input type="checkbox" id="topping1" name="toppings" value="pepperoni">
+                        <label for="topping1">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping2" name="toppings" value="mushrooms">
+                        <label for="topping2">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping3" name="toppings" value="onions">
+                        <label for="topping3">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping4" name="toppings" value="sausage">
+                        <label for="topping3">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping5" name="toppings" value="Bacon">
+                        <label for="topping3">Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping6" name="toppings" value="Black olives">
+                        <label for="topping3">Black olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping7" name="toppings" value="Pineapple">
+                        <label for="topping3">Pineapple</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping8" name="toppings" value="garlic">
+                        <label for="topping3">garlic</label>
+                    </div>
+
+
+                </div>
+            </div>
+                <div>
+                    <!-- adding required so that user is not able to place the order without completing the form,it displays a message -->
+                   
+                    <input type="text" id="userName" name="userName" placeholder="enter your name" required>
+                </div>
+                <div>
+                    
+                    <input type="email" id="email" name="email" placeholder="enter your email" required>
+                </div>
+               
+                <button type="submit">Place Order</button>
+            </fieldset>
+            </form>
+           
+        
+          
+      </section>
+    </main>
+    <!-- footer -->
+<footer>
+    
+    <div class="social-icons">
+        <!-- target="_blank" will direct to the new tab to display the link -->
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+       
+    </div>
+    <!-- copyright note -->
+    <div class="copyright">
+       <p> 2024 Pizza Company. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
